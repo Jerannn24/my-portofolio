@@ -1,9 +1,12 @@
-@import "tailwindcss";
-
 :root {
   /*background & foreground*/
-  --bg: #1f0f1f;
-  --fg: #ededed;
+  --bg: #080024;
+  /* very dark blue/purple */
+  --fg: #ffffff;
+  /* putih */
+  --navbar-bg: #0a0033;
+  --navbar-fg: #00FFFF;
+  /* cyan neon */
 }
 
 body {

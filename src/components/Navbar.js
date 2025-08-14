@@ -1,12 +1,9 @@
-"use client";
 import React from 'react'
 
 const Navbar = () => {
     return (
         <div>
-            <nav className='navbar'>
-
-            </nav>
+            <nav></nav>
         </div>
     )
 }
