@@ -1,10 +1,10 @@
-import Portofolio from "@/components/Portofolio";
-import Image from "next/image";
+import Portfolio from "@/components/Portfolio";
+
 
 export default function Home() {
   return (
-    <div>
-      <Portofolio />
+    <div style={{ backgroundColor: "var(--bg)" }}>
+      <Portfolio />
     </div>
   );
 }

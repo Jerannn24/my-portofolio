@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
-const Portofolio = () => {
+const Portfolio = () => {
     return (
-        <div>
+        <div style={{ backgroundColor: "#080024" }}>
             <Navbar />
         </div>
     )
 }
 
-export default Portofolio
+export default Portfolio

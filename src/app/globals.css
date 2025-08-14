@@ -9,7 +9,50 @@
   /* cyan neon */
 }
 
+html,
 body {
   background-color: var(--bg);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Navbar 3D Text Shadow */
+.navbar-3d:hover {
+  background-color: var(--navbar-fg);
+  color: var(--navbar-bg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.4) inset;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-3d:hover .navbar-brand,
+.navbar-3d:hover .nav-link {
+  color: var(--navbar-bg) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-3d {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-fg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.3) inset;
+  z-index: 1000;
+}
+
+.navbar-3d .navbar-brand,
+.navbar-3d .nav-link {
+  color: var(--navbar-fg) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 2px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+.navbar-3d .navbar-brand img {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  margin-right: 8px;
+}
+
+.navbar-3d .navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--navbar-fg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
