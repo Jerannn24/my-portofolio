@@ -13,48 +13,53 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="navbar navbar-expand-lg fixed-top navbar-3d">
-            <div className="container">
-                <Link href="#" className="navbar-brand d-flex align-items-center mr-10px">
-                    <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" className="m-auto p-5px" />
-                </Link>
-                <div className="navbar-nav ms-auto navbar-hover">
-                    <Link href="#" className="navbar-brand d-flex align-items-center navbar-3d p-10px navbar-hover nav-link">
-                        JUNIOR NATRA SITUMORANG
+        <div>
+            <nav className="navbar navbar-expand-lg fixed-top navbar-effect">
+                <div className="container">
+                    <Link href="#" className="navbar-brand d-flex align-items-center mr-10px navbar-effect .navbar-text ">
+                        <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" className="m-auto p-5px navbar-link" />
                     </Link>
+                    <div className="navbar-nav ms-auto .navbar-text">
+                        <Link href="#" className=".navbar-text navbar-brand text-center d-flex align-items-center navbar-effect p-10px  nav-link">
+                            Junior Natra Situmorang
+                        </Link>
+                    </div>
+                    <div className="navbar-brand">
+                        <button
+                            className="navbar-toggler navbar-effect"
+                            type="button"
+                            data-bs-theme="dark"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span className="navbar-toggler-icon "></span>
+                        </button>
+                    </div>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ms-auto d-flex" style={{ gap: "20px" }}>
+                            <li className="nav-item">
+                                <Link href="#" className="nav-link navbar-effect text-center">
+                                    Home
+                                </Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link href="#about" className="nav-link navbar-effect text-center">
+                                    About
+                                </Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link href="#project" className="nav-link navbar-effect text-center">
+                                    Project
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ms-auto">
-                        <li className="nav-item navbar-hover me-3 mb-2">
-                            <Link href="#" className="nav-link navbar-3d text-center">
-                                HOME
-                            </Link>
-                        </li>
-                        <li className="nav-item navbar-hover me-3 mb-2">
-                            <Link href="#about" className="nav-link navbar-3d text-center">
-                                ABOUT
-                            </Link>
-                        </li>
-                        <li className="nav-item navbar-hover me-3 mb-2">
-                            <Link href="#project" className="nav-link navbar-3d text-center">
-                                PROJECT
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     );
 };
 

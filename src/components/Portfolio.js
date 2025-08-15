@@ -5,7 +5,7 @@ const Portfolio = () => {
         <div style={{ backgroundColor: "#080024" }}>
             <Navbar />
             <div className='container'>
-                <div className=''>
+                <div className='container' id='home'>
 
                 </div>
             </div>
