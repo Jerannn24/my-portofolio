@@ -6,7 +6,7 @@ const Portfolio = () => {
             <Navbar />
             <div className='container'>
                 <div className='container' id='home'>
-
+                    
                 </div>
             </div>
         </div>

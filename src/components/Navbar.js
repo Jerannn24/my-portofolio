@@ -1,8 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     useEffect(() => {
         // Import Bootstrap JS hanya di client-side
         import("bootstrap/dist/js/bootstrap.bundle.min.js")
@@ -32,10 +34,11 @@ const Navbar = () => {
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarNav"
                             aria-controls="navbarNav"
-                            aria-expanded="false"
+                            aria-expanded={isOpen}
                             aria-label="Toggle navigation"
+                            onClick={() => setIsOpen(!isOpen)}
                         >
-                            <span className="navbar-toggler-icon "></span>
+                            <span className={isOpen ? "btn-close" : "navbar-toggler-icon"}></span>
                         </button>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNav">
@@ -58,8 +61,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </nav >
+        </div >
     );
 };
 

@@ -78,3 +78,17 @@ body {
 button {
   background-color: var(--navbar-fg);
 }
+
+.navbar-toggler,
+.btn-close {
+  width: 45px;
+  /* ukuran konsisten */
+  height: 40px;
+  /* ukuran konsisten */
+  padding: 0;
+  /* buang padding bawaan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
