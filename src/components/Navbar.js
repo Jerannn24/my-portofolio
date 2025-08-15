@@ -15,12 +15,12 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg fixed-top navbar-3d">
             <div className="container">
-                <Link href="#" className="navbar-brand d-flex align-items-center navbar-3d mr-10px ">
-                    <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" />
+                <Link href="#" className="navbar-brand d-flex align-items-center mr-10px">
+                    <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" className="m-auto p-5px" />
                 </Link>
                 <div className="navbar-nav ms-auto navbar-hover">
-                    <Link href="#" className="navbar-brand d-flex align-items-center navbar-3d mr-10px navbar-hover nav-link">
-                        PORTOFOLIO
+                    <Link href="#" className="navbar-brand d-flex align-items-center navbar-3d p-10px navbar-hover nav-link">
+                        JUNIOR NATRA SITUMORANG
                     </Link>
                 </div>
                 <button
@@ -36,9 +36,19 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item navbar-hover">
-                            <Link href="#" className="nav-link navbar-3d">
+                        <li className="nav-item navbar-hover me-3 mb-2">
+                            <Link href="#" className="nav-link navbar-3d text-center">
                                 HOME
+                            </Link>
+                        </li>
+                        <li className="nav-item navbar-hover me-3 mb-2">
+                            <Link href="#about" className="nav-link navbar-3d text-center">
+                                ABOUT
+                            </Link>
+                        </li>
+                        <li className="nav-item navbar-hover me-3 mb-2">
+                            <Link href="#project" className="nav-link navbar-3d text-center">
+                                PROJECT
                             </Link>
                         </li>
                     </ul>

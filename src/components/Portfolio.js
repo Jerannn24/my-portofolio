@@ -4,6 +4,11 @@ const Portfolio = () => {
     return (
         <div style={{ backgroundColor: "#080024" }}>
             <Navbar />
+            <div className='container'>
+                <div className=''>
+
+                </div>
+            </div>
         </div>
     )
 }
