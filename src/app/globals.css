@@ -17,7 +17,7 @@ body {
 }
 
 .navbar {
-  color: var(--navbar-fg);
+  border-bottom: 1px groove var(--navbar-fg);
 }
 
 .navbar-effect {
@@ -31,8 +31,9 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
   color: var(--navbar-fg);
-  border-bottom: 1px solid var(--navbar-fg);
-  transition: all 0.3s ease-in-out;
+  border-bottom: 1px outset var(--navbar-fg);
+  border-right: 1px outset var(--navbar-fg);
+  transition: all 0.1s ease-in-out;
 }
 
 .navbar-effect .nav-link:visited {
