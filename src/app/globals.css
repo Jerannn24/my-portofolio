@@ -7,6 +7,7 @@
   /* abu gelap */
   --navbar-fg: #f4c430;
   /* gold */
+  --navbar-fg-hover: #f46430;
 }
 
 html,
@@ -28,11 +29,8 @@ body {
 
 /* Navbar 3D Text Shadow */
 .navbar-effect .nav-link:hover {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
-  color: var(--navbar-fg);
-  border-bottom: 1px outset var(--navbar-fg);
-  border-right: 1px outset var(--navbar-fg);
+  color: var(--navbar-fg-hover);
   transition: all 0.1s ease-in-out;
 }
 
@@ -43,8 +41,6 @@ body {
 .navbar-effect .nav-link:active {
   color: var(--navbar-fg);
   transform: scale(0.95);
-  /* sedikit mengecil saat diklik */
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
   /* efek tekan ke dalam */
   transition: all 0.2s ease-in-out;
 }
@@ -92,4 +88,51 @@ button {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+}
+
+.myself {
+  opacity: 0;
+  transform: translateY(30px);
+  /* mulai agak turun */
+  animation: fadeIn 3s ease-out forwards;
+}
+
+.desc-writerr {
+  margin-bottom: 20px;
+  /* kasih jarak bawah */
+}
+
+.contactMe {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 12px;
+  background: var(--navbar-fg);
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.contactMe:hover {
+  background: var(--navbar-fg-hover);
+  transform: scale(1.05);
+}
+
+.contactMe:active {
+  transform: scale(0.95);
+  /* sedikit mengecil saat diklik */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+  /* efek tekan ke dalam */
+  transition: all 0.2s ease-in-out;
+}
+
+/* bikin keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
