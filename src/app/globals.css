@@ -22,38 +22,6 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  transition: background-color 0.6s ease, color 0.6s ease;
-}
-
-/* Navbar */
-.navbar-effect {
-  background-color: var(--navbar-bg);
-  color: var(--navbar-fg);
-  transition: background-color 0.6s ease, color 0.6s ease;
-}
-
-/* Button toggle animasi */
-.theme-toggle-btn {
-  position: relative;
-  overflow: hidden;
-  border: none;
-  border-radius: 12px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-weight: bold;
-  background: var(--navbar-bg);
-  color: var(--navbar-fg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.6s ease, color 0.6s ease, transform 0.6s ease;
-}
-
-.theme-toggle-btn:hover {
-  color: var(--navbar-fg-hover);
-  transform: scale(1.05);
-}
-
-.theme-toggle-btn:active {
-  transform: scale(0.95);
 }
 
 .navbar-effect {

@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import DarkMode from "./DarkMode";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -22,7 +21,6 @@ const Navbar = () => {
                     <Link href="#home" className="navbar-brand d-flex align-items-center navbar-effect navbar-text ">
                         <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" className="m-auto navbar-link" />
                     </Link>
-                    <DarkMode />
                     <div className="navbar-nav ms-auto navbar-text">
                         <Link href="#" className="navbar-text navbar-brand text-center d-flex align-items-center navbar-effect nav-link">
                             Junior Natra Situmorang
