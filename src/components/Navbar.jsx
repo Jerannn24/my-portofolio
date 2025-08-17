@@ -5,6 +5,27 @@ import DarkMode from "./DarkMode";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        if (typeof document !== "undefined") {
+            // Cek awal
+            setIsDark(document.body.classList.contains("dark-mode"));
+
+            // Observasi perubahan class body
+            const observer = new MutationObserver(() => {
+                setIsDark(document.body.classList.contains("dark-mode"));
+            });
+
+            observer.observe(document.body, {
+                attributes: true,
+                attributeFilter: ["class"],
+            });
+
+            return () => observer.disconnect();
+        }
+    }, []);
+
 
     useEffect(() => {
         // Import Bootstrap JS hanya di client-side
@@ -17,12 +38,12 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg fixed-top navbar-effect">
+            <nav className="d-flex navbar navbar-expand-lg fixed-top navbar-effect align-items-center">
                 <div className="container">
                     <Link href="#home" className="navbar-brand d-flex align-items-center navbar-effect navbar-text ">
                         <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" className="m-auto navbar-link" />
                     </Link>
-                    <DarkMode />
+                    <DarkMode className="navbar-brand navbar-effect navbar-darkmode" />
                     <div className="navbar-nav ms-auto navbar-text">
                         <Link href="#" className="navbar-text navbar-brand text-center d-flex align-items-center navbar-effect nav-link">
                             Junior Natra Situmorang
@@ -32,7 +53,7 @@ const Navbar = () => {
                         <button
                             className="navbar-toggler navbar-effect"
                             type="button"
-                            data-bs-theme="dark"
+                            data-bs-theme={isDark ? "dark" : "light"}
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarNav"
                             aria-controls="navbarNav"

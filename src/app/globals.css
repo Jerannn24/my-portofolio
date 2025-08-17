@@ -10,11 +10,18 @@
       var(--bg) 0%,
       var(--bg-mid) 50%,
       var(--bg-2) 100%);
-  --fg: #0f0f0f;
+
+  /* Font & foreground */
+  --fg: #1c1c1c;
+
+  /* Navbar */
   --navbar-bg: #ffffff;
-  --navbar-fg: #00c78b;
-  --navbar-fg-hover: #009e6c;
+  --navbar-fg: #007a57;
+  /* hijau lebih tua, kontras di putih */
+  --navbar-fg-hover: #005a3f;
+  /* lebih gelap untuk hover */
 }
+
 
 .dark-mode {
   /* Dark mode */
@@ -32,6 +39,15 @@
   --navbar-bg: #1a1a1a;
   --navbar-fg: #00ffa3;
   --navbar-fg-hover: #00c78b;
+}
+
+.full-background {
+  width: 100%;
+  min-height: 100vh;
+  /* atau 100dvh biar aman di mobile */
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
 }
 
 /* Global transition */
@@ -54,13 +70,21 @@ body {
 }
 
 /* Navbar 3D Text Shadow */
-.navbar-effect .nav-link:hover {
+.navbar-effect .nav-link:hover,
+.navbar-darkmode:hover {
   transform: scale(1.05);
   color: var(--navbar-fg-hover);
   transition: all 0.1s ease-in-out;
 }
 
-.navbar-effect .nav-link:active {
+.navbar-darkmode:hover {
+  transform: rotate(2deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.navbar-effect .nav-link:active,
+.navbar-darkmode:active {
   color: var(--navbar-fg);
   transform: scale(0.95);
   /* efek tekan ke dalam */
@@ -68,7 +92,8 @@ body {
 }
 
 .navbar-toggler:active,
-.navbar-effect .navbar-brand img:active {
+.navbar-effect .navbar-brand img:active,
+.navbar-darkmode:active {
   transform: scale(0.9);
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease-in-out;
@@ -146,7 +171,7 @@ body {
 
 .transition-1 {
   background: var(--bg-2-gradient);
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 /* bikin keyframes */

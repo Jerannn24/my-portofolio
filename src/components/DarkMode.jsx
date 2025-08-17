@@ -23,12 +23,14 @@ const DarkMode = () => {
     return (
         <button
             onClick={() => setDark(!dark)}
-            className='navbar-branc navbar-text'
+            className='navbar-darkmode'
             style={{
+                gap: "10px",
                 padding: "5px",
                 borderRadius: "15px",
                 border: "none",
                 cursor: "pointer",
+                margin: "10px",
                 backgroundColor: dark ? "#333" : "#ddd",
                 color: dark ? "#fff" : "#000",
                 transition: "all 0.6s ease",

@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Portfolio = () => {
     return (
-        <div style={{ color: "var(--fg)", backgroundColor: "var(--bg)", minHeight: "100vh", margin: "0" }}>
+        <div className="full-background" style={{ color: "var(--fg)", backgroundColor: "var(--bg)", minHeight: "100vh", margin: "0" }}>
             <Navbar />
             <div className='container py-5' id='about home'>
                 <div className='row align-items-center'>
@@ -14,7 +14,6 @@ const Portfolio = () => {
                             src='./myself.png'
                             alt='Myself'
                             className='img-fluid myself'
-                            style={{ maxWidth: '500px', borderRadius: '50px' }}
                         />
                     </div>
                     <div className='col-md-6' style={{ paddingTop: "50px" }}>
@@ -63,7 +62,7 @@ const Portfolio = () => {
                     className='container'>
                     <h1 className='fw-bold text-center'>My Project Review</h1>
                     <div className='scroll-area'>
-                        
+
                     </div>
                     <div>
                         {/* <ThemeToggle /> */}
