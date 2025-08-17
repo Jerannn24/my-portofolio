@@ -18,11 +18,11 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg fixed-top navbar-effect">
                 <div className="container">
-                    <Link href="#" className="navbar-brand d-flex align-items-center mr-10px navbar-effect .navbar-text ">
-                        <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" className="m-auto p-5px navbar-link" />
+                    <Link href="#" className="navbar-brand d-flex align-items-center navbar-effect navbar-text ">
+                        <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" className="m-auto navbar-link" />
                     </Link>
-                    <div className="navbar-nav ms-auto .navbar-text">
-                        <Link href="#" className=".navbar-text navbar-brand text-center d-flex align-items-center navbar-effect p-10px  nav-link">
+                    <div className="navbar-nav ms-auto navbar-text">
+                        <Link href="#" className="navbar-text navbar-brand text-center d-flex align-items-center navbar-effect nav-link">
                             Junior Natra Situmorang
                         </Link>
                     </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto d-flex" style={{ gap: "20px" }}>
+                        <ul className="navbar-nav ms-auto d-flex" style={{ gap: "10px" }}>
                             <li className="nav-item">
                                 <Link href="#" className="nav-link navbar-effect text-center hover-change">
                                     Home

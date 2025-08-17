@@ -33,7 +33,7 @@ const Portfolio = () => {
                                     deleteSpeed={0}
                                 />
                             </h1>
-                            <h5>
+                            <h5 style={{ paddingBottom: "250px" }}>
                                 <Typewriter
                                     words={["I’m passionate about Software Engineering and excited to explore the world of AI Engineering 🤖. I love building things that solve real problems, experimenting with new ideas, and continuously learning along the way.", "Always open to collaboration, new opportunities, or just a chat — feel free to reach me anytime! ✉️"]}
                                     loop={true}
@@ -45,7 +45,7 @@ const Portfolio = () => {
                             </h5>
                         </div>
                         <a href='https://www.linkedin.com/in/junior-natra-929b42320/'>
-                            <button className='contactMe' >
+                            <button className='contactMe'>
                                 Contact Me
                             </button>
                         </a>

@@ -29,10 +29,6 @@ body {
   color: var(--navbar-fg-hover);
 }
 
-.hover-change:active {
-  color: var(--navbar-fg-hover);
-}
-
 /* Navbar 3D Text Shadow */
 .navbar-effect .nav-link:hover {
   transform: scale(1.05);
