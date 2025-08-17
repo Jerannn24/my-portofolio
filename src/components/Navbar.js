@@ -44,12 +44,12 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto d-flex" style={{ gap: "20px" }}>
                             <li className="nav-item">
-                                <Link href="#" className="nav-link navbar-effect text-center">
+                                <Link href="#" className="nav-link navbar-effect text-center hover-change">
                                     Home
                                 </Link>
                             </li>
                             <li className="nav-item ">
-                                <Link href="#about" className="nav-link navbar-effect text-center">
+                                <Link href="#about" className="nav-link navbar-effect text-center hover-change">
                                     About
                                 </Link>
                             </li>

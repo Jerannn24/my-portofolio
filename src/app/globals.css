@@ -7,13 +7,11 @@
   /* abu gelap */
   --navbar-fg: #f4c430;
   /* gold */
-  --navbar-fg-hover: #f46430;
+  --navbar-fg-hover: #f4a230;
 }
 
 html,
 body {
-  background-color: var(--bg);
-  color: var(--fg);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -27,15 +25,19 @@ body {
   color: var(--navbar-fg);
 }
 
+.hover-change:hover {
+  color: var(--navbar-fg-hover);
+}
+
+.hover-change:active {
+  color: var(--navbar-fg-hover);
+}
+
 /* Navbar 3D Text Shadow */
 .navbar-effect .nav-link:hover {
   transform: scale(1.05);
   color: var(--navbar-fg-hover);
   transition: all 0.1s ease-in-out;
-}
-
-.navbar-effect .nav-link:visited {
-  color: var(--navbar-fg);
 }
 
 .navbar-effect .nav-link:active {
@@ -70,10 +72,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--navbar-bg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-button {
-  background-color: var(--navbar-fg);
 }
 
 .navbar-toggler,

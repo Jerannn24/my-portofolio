@@ -9,7 +9,7 @@ const Portfolio = () => {
             <Navbar />
             <div className='container py-5' id='about'>
                 <div className='row align-items-center'>
-                    <div className='col-md-6 text-center'>
+                    <div className='col-md-6 text-center' style={{ paddingBottom: "50px" }}>
                         <img
                             src='./myself.png'
                             alt='Myself'
@@ -17,8 +17,13 @@ const Portfolio = () => {
                             style={{ maxWidth: '500px', borderRadius: '50px' }}
                         />
                     </div>
-                    <div className='col-md-6 text-white'>
-                        <div className='desc-writer'>
+                    <div className='col-md-6 text-white' style={{ paddingTop: "50px" }}>
+
+                        <div className='desc-writer' style={{
+                            minHeight: "10vw",   // tinggi static biar gak loncat2
+                            width: "100%",        // atau kasih fixed width, misalnya "500px"
+                            overflow: "hidden"    // biar kalau teks panjang nggak bikin layout geser
+                        }}>
                             <h1 className='fw-bold'>
                                 <Typewriter
                                     words={["I'm Junior Natra Situmorang"]}
@@ -40,12 +45,15 @@ const Portfolio = () => {
                             </h5>
                         </div>
                         <a href='https://www.linkedin.com/in/junior-natra-929b42320/'>
-                            <button className='contactMe'>
+                            <button className='contactMe' >
                                 Contact Me
                             </button>
                         </a>
                     </div>
                 </div>
+            </div>
+            <div>
+
             </div>
         </div >
     )
