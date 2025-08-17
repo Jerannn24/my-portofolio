@@ -15,7 +15,8 @@ const ScrollArea = ({ children, height = "200px" }) => {
                     padding: "10px",
                     border: "2px solid #333",
                     scrollbarWidth: "thin",               // Firefox: tipis
-                    scrollbarColor: "#10B981 #e0e0e0",   // Firefox: thumb dan track
+                    scrollbarColor: "#10B981 #e0e0e0",
+                    borderRadius: "10px",  // Firefox: thumb dan track
                 }}
             >
                 {children}

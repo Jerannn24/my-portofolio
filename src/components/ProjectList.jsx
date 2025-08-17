@@ -25,6 +25,8 @@ const ProjectList = () => {
                             marginBottom: "10px",
                             backgroundColor: "var(--bg-2)",
                             boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                            height: "100px",
+                            color: "var(--fg)"
                         }}
                     >
                         <h5 style={{ fontWeight: "bold", marginBottom: "5px" }}>

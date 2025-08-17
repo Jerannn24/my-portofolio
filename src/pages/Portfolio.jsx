@@ -15,6 +15,7 @@ const Portfolio = () => {
                             src='./myself.png'
                             alt='Myself'
                             className='img-fluid myself'
+                            style={{ borderRadius: "50px" }}
                         />
                     </div>
                     <div className='col-md-6' style={{ paddingTop: "50px" }}>
@@ -66,7 +67,7 @@ const Portfolio = () => {
                         <ProjectList />
                     </div>
                     <div>
-                        {/* <ThemeToggle /> */}
+
                     </div>
                 </div>
             </div>
