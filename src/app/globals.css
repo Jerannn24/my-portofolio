@@ -2,9 +2,9 @@
   /* Light mode */
   --bg: #f5f5f5;
   /* page 1: abu putih */
-  --bg-2: #e8f9f4;
+  --bg-2: #c7f9ea;
   /* page 2: hijau pastel lembut */
-  --bg-mid: #f0fff9;
+  --bg-mid: #e7fdf4;
   /* warna antara: putih kehijauan */
   --bg-2-gradient: linear-gradient(180deg,
       var(--bg) 0%,
@@ -34,15 +34,13 @@
   --navbar-fg-hover: #00c78b;
 }
 
-
-
-
 /* Global transition */
 html,
 body {
   background: var(--bg);
   color: var(--fg);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 
 .navbar-effect {
