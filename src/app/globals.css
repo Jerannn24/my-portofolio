@@ -1,11 +1,6 @@
 :root {
   /* Light mode */
   --bg: #f5f5f5;
-  --bg-2: #eafdf5;
-  --bg-2-transition: linear-gradient(180deg,
-      #f5f5f5 0%,
-      #eafdf5 50%,
-      #eafdf5 100%);
   --fg: #0f0f0f;
   --navbar-bg: #ffffff;
   --navbar-fg: #00c78b;
@@ -15,24 +10,50 @@
 .dark-mode {
   /* Dark mode */
   --bg: #0f0f0f;
-  --bg-2: #121a14;
-  --bg-2-transition: linear-gradient(180deg,
-      #0f0f0f 0%,
-      #121a14 50%,
-      #121a14 100%);
   --fg: #eaeaea;
   --navbar-bg: #1a1a1a;
   --navbar-fg: #00ffa3;
   --navbar-fg-hover: #00c78b;
 }
 
-/* biar semua elemen pakai variable */
-body,
-html {
+/* Global transition */
+html,
+body {
   background: var(--bg);
   color: var(--fg);
-  transition: background 0.4s ease, color 0.4s ease;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Navbar */
+.navbar-effect {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-fg);
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Button toggle animasi */
+.theme-toggle-btn {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--navbar-bg);
+  color: var(--navbar-fg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.6s ease, color 0.6s ease, transform 0.6s ease;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--navbar-fg-hover);
+  transform: scale(1.05);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.95);
 }
 
 .navbar-effect {

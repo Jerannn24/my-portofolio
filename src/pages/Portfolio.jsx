@@ -1,7 +1,6 @@
 "use client";
 import React from 'react'
 import Navbar from '../components/Navbar.jsx'
-import ThemeToggle from '@/components/DarkMode.jsx';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Portfolio = () => {
@@ -66,7 +65,7 @@ const Portfolio = () => {
 
                 </div>
                 <div>
-                    <ThemeToggle />
+                    {/* <ThemeToggle /> */}
                 </div>
             </div>
         </div >

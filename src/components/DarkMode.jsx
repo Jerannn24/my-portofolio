@@ -1,24 +1,44 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-export default function ThemeToggle() {
-    const [dark, setDark] = useState(false);
+const DarkMode = () => {
+    const [darkMode, setDarkMode] = useState(false);
 
+    // cek preferensi user di localStorage
     useEffect(() => {
-        if (dark) {
-            document.body.classList.add("dark-mode");
-        } else {
-            document.body.classList.remove("dark-mode");
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+            setDarkMode(true);
+            document.documentElement.classList.add("dark-mode");
         }
-    }, [dark]);
+    }, []);
+
+    const toggleTheme = () => {
+        if (darkMode) {
+            document.documentElement.classList.remove("dark-mode");
+            localStorage.setItem("theme", "light");
+        } else {
+            document.documentElement.classList.add("dark-mode");
+            localStorage.setItem("theme", "dark");
+        }
+        setDarkMode(!darkMode);
+    };
 
     return (
         <button
-            onClick={() => setDark(!dark)}
-            className="px-4 py-2 rounded-xl shadow-md font-semibold transition
-                 bg-[var(--navbar-bg)] text-[var(--navbar-fg)] hover:text-[var(--navbar-fg-hover)]"
+            onClick={toggleTheme}
+            className="px-4 py-2 rounded-md font-bold"
+            style={{
+                background: "var(--navbar-fg)",
+                color: "white",
+                border: "none",
+                cursor: "pointer",
+                transition: "0.3s",
+            }}
         >
-            {dark ? "☀️ Light Mode" : "🌙 Dark Mode"}
+            {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
         </button>
     );
-}
+};
+
+export default DarkMode;
