@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import Navbar from '../components/Navbar.jsx'
-import ScrollArea from '@/components/ScrollArea.jsx';
+import ProjectList from '@/components/ProjectList.jsx';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Portfolio = () => {
@@ -63,31 +63,7 @@ const Portfolio = () => {
                     className='container'>
                     <h1 className='fw-bold text-center'>My Project Review</h1>
                     <div className='scroll-area'>
-                        <ScrollArea height="250px">
-                            <p>Ini konten pertama.</p>
-                            <p>Ini konten kedua.</p>
-                            <p>Ini konten ketiga.</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                            <p>Dan seterusnya...</p>
-                        </ScrollArea>
-
+                        <ProjectList />
                     </div>
                     <div>
                         {/* <ThemeToggle /> */}
