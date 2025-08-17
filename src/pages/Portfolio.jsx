@@ -1,13 +1,14 @@
 "use client";
 import React from 'react'
-import Navbar from './Navbar'
-import { Typewriter } from 'react-simple-typewriter'
+import Navbar from '../components/Navbar.jsx'
+import ThemeToggle from '@/components/DarkMode.jsx';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Portfolio = () => {
     return (
-        <div style={{ backgroundColor: "var(--bg)", minHeight: "100vh" }}>
+        <div style={{ color: "var(--fg)", backgroundColor: "var(--bg)", minHeight: "100vh", margin: "0" }}>
             <Navbar />
-            <div className='container py-5' id='about'>
+            <div className='container py-5' id='about home'>
                 <div className='row align-items-center'>
                     <div className='col-md-6 text-center' style={{ paddingBottom: "50px" }}>
                         <img
@@ -17,7 +18,7 @@ const Portfolio = () => {
                             style={{ maxWidth: '500px', borderRadius: '50px' }}
                         />
                     </div>
-                    <div className='col-md-6 text-white' style={{ paddingTop: "50px" }}>
+                    <div className='col-md-6' style={{ paddingTop: "50px" }}>
 
                         <div className='desc-writer' style={{
                             minHeight: "10vw",   // tinggi static biar gak loncat2
@@ -52,8 +53,21 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='transition-1'>
 
+            </div>
+            <div id='project'
+                style={{
+                    backgroundColor: "var(--bg-2)",
+                    minHeight: "100vh",
+                }}>
+                <h1>My Project Review</h1>
+                <div className='scroll-area'>
+
+                </div>
+                <div>
+                    <ThemeToggle />
+                </div>
             </div>
         </div >
     )
