@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 import ProjectList from '@/components/ProjectList.js';
+import Skill from '@/components/Skill.js';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Portfolio = () => {
@@ -75,7 +76,8 @@ const Portfolio = () => {
                 backgroundColor: "var(--bg)",
                 minHeight: "100vh",
             }}>
-                
+                <h1 className='fw-bold text-center pb-5' >Skills & Tools</h1>
+                <Skill />
             </div>
         </div >
     )

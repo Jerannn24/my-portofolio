@@ -27,7 +27,6 @@
   /* lebih gelap untuk hover */
 }
 
-
 .dark-mode {
   /* Dark mode */
   --bg: #0f0f0f;
@@ -80,11 +79,10 @@ body {
   color: var(--navbar-fg-hover);
 }
 
-.hover-change:target {
-  color: var(--navbar-fg-hover);
+.hover-change:visited {
+  color: var(--navbar-fg) !important;
 }
 
-/* Navbar 3D Text Shadow */
 .navbar-effect .nav-link:hover,
 .navbar-darkmode:hover {
   transform: scale(1.05);
@@ -99,8 +97,15 @@ body {
 .card-style:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
-  cursor: pointer;
   border: 1.5px solid var(--navbar-fg-hover);
+  cursor: pointer;
+}
+
+.badge:hover {
+  cursor: pointer;
+  background-color: var(--navbar-fg-hover) !important;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
 .navbar-darkmode:hover {
@@ -152,7 +157,7 @@ body {
 
 .navbar-effect .navbar-toggler {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: var(--navbar-bg);
+  background: var(--navbar-bg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 

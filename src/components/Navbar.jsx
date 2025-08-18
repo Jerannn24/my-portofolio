@@ -45,7 +45,7 @@ const Navbar = () => {
                     </Link>
                     <DarkMode className="navbar-brand navbar-effect navbar-darkmode" />
                     <div className="navbar-nav ms-auto navbar-text">
-                        <Link href="#" className="navbar-text navbar-brand text-center d-flex align-items-center navbar-effect nav-link">
+                        <Link href="#" className="navbar-text navbar-brand text-center d-flex align-items-center hover-change navbar-effect nav-link">
                             Junior Natra Situmorang
                         </Link>
                     </div>
@@ -77,12 +77,12 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item ">
-                                <Link href="#project" className="nav-link navbar-effect text-center">
+                                <Link href="#project" className="nav-link navbar-effect text-center hover-change">
                                     Project
                                 </Link>
                             </li>
                             <li className="nav-item ">
-                                <Link href="#skill" className="nav-link navbar-effect text-center">
+                                <Link href="#skill" className="nav-link navbar-effect text-center hover-change">
                                     Skill
                                 </Link>
                             </li>
