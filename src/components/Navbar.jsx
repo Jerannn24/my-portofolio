@@ -81,6 +81,11 @@ const Navbar = () => {
                                     Project
                                 </Link>
                             </li>
+                            <li className="nav-item ">
+                                <Link href="#skill" className="nav-link navbar-effect text-center">
+                                    Skill
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
