@@ -1,0 +1,55 @@
+"use client";
+import React from "react";
+
+// Contoh data project
+const projects = [
+    {
+        title: "Project 1",
+        description: "Deskripsi project pertama.",
+        status: "Completed",
+    },
+    {
+        title: "Project 2",
+        description: "Deskripsi project kedua.",
+        status: "In Progress",
+    },
+    {
+        title: "Project 3",
+        description: "Deskripsi project ketiga.",
+        status: "New",
+    },
+];
+
+const ProjectList = () => {
+    return (
+        <div className="container py-4">
+            <h2 className="mb-4 text-center">My Projects</h2>
+            <div className="row g-4">
+                {projects.map((project, index) => (
+                    <div className="col-md-4" key={index}>
+                        <div className="card h-100 border-success shadow-sm">
+                            <div className="card-body">
+                                <h5 className="card-title">{project.title}</h5>
+                                <p className="card-text">{project.description}</p>
+                            </div>
+                            <div className="card-footer text-end">
+                                <span
+                                    className={`badge ${project.status === "Completed"
+                                            ? "bg-success"
+                                            : project.status === "In Progress"
+                                                ? "bg-warning text-dark"
+                                                : "bg-primary"
+                                        }`}
+                                >
+                                    {project.status}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default ProjectList;
