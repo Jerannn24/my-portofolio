@@ -113,7 +113,7 @@ const Portfolio = () => {
                     </div>
                 </footer>
             </div>
-            <div className='transition-1-reversed' style={{ height: '10vh' }}>
+            <div className='transition-1-reversed heightm' style={{ height: '10vh' }}>
             </div>
         </div >
     )
