@@ -7,6 +7,10 @@
       var(--bg) 0%,
       var(--bg-mid) 50%,
       var(--bg-2) 100%);
+  --bg-2-gradient-reversed: linear-gradient(360deg,
+      var(--bg) 0%,
+      var(--bg-mid) 50%,
+      var(--bg-2) 100%);
 
   /* Font & foreground */
   --fg: #1c1c1c;
@@ -34,6 +38,12 @@
       var(--bg) 0%,
       var(--bg-mid) 50%,
       var(--bg-2) 100%);
+
+  --bg-2-gradient-reversed: linear-gradient(360deg,
+      var(--bg) 0%,
+      var(--bg-mid) 50%,
+      var(--bg-2) 100%);
+
   --fg: #eaeaea;
   --navbar-bg: #1a1a1a;
   --navbar-fg: #00ffa3;
@@ -196,6 +206,11 @@ body {
 
 .transition-1 {
   background: var(--bg-2-gradient);
+  min-height: 50vh;
+}
+
+.transition-1-reversed {
+  background: var(--bg-2-gradient-reversed);
   min-height: 50vh;
 }
 

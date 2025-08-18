@@ -56,20 +56,26 @@ const Portfolio = () => {
             <div className='transition-1'>
 
             </div>
-            <div style={{
+            <div id='project' style={{
                 backgroundColor: "var(--bg-2)",
                 minHeight: "100vh",
             }} >
-                <div id='project'
+                <div
                     className='container'>
                     <h1 className='fw-bold text-center'>My Project Review</h1>
                     <div className='card-area'>
                         <ProjectList />
                     </div>
-                    <div>
-
-                    </div>
                 </div>
+            </div>
+            <div className='transition-1-reversed'>
+
+            </div>
+            <div id="skill" style={{
+                backgroundColor: "var(--bg)",
+                minHeight: "100vh",
+            }}>
+
             </div>
         </div >
     )
