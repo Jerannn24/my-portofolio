@@ -98,22 +98,22 @@ const Portfolio = () => {
 
                     {/* Social Icons */}
                     <div className="d-flex justify-content-center gap-3 mt-3">
-                        <a href="https://github.com/Jerannn24" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
+                        <a className="icon-effect" href="https://github.com/Jerannn24" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
                             <FaGithub />
                         </a>
-                        <a href="https://www.linkedin.com/in/junior-natra-929b42320/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
+                        <a className="icon-effect" href="https://www.linkedin.com/in/junior-natra-929b42320/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
                             <FaLinkedin />
                         </a>
-                        <a href="https://instagram.com/j.natras" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
+                        <a className="icon-effect" href="https://instagram.com/j.natras" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
                             <FaInstagram />
                         </a>
-                        <a href="mailto:juniornatra72@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
+                        <a className="icon-effect" href="mailto:juniornatra72@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
                             <MdEmail />
                         </a>
                     </div>
                 </footer>
             </div>
-            <div className='transition-1-reversed heightm' style={{ height: '10vh' }}>
+            <div className='transition-1-reversed heightm'>
             </div>
         </div >
     )
