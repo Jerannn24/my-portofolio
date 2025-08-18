@@ -4,6 +4,10 @@ import Navbar from '../components/Navbar.jsx';
 import ProjectList from '@/components/ProjectList.js';
 import Skill from '@/components/Skill.js';
 import { Typewriter } from 'react-simple-typewriter';
+import Link from 'next/link.js';
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 
 const Portfolio = () => {
     return (
@@ -70,7 +74,6 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className='transition-1-reversed'>
-
             </div>
             <div id="skill" style={{
                 backgroundColor: "var(--bg)",
@@ -78,6 +81,39 @@ const Portfolio = () => {
             }}>
                 <h1 className='fw-bold text-center pb-5' >Skills & Tools</h1>
                 <Skill />
+            </div>
+            <div className='transition-1'>
+            </div>
+            <div style={{ background: "var(--bg-2)" }}>
+                <footer className='container text-center' style={{ background: "var(--bg-2)", padding: "20px" }}>
+                    <Link href="#home" className="navbar-brand d-flex align-items-center navbar-effect navbar-text" style={{ background: "var(--bg-2)" }}>
+                        <img src="./LogoYt.jpg" alt="Logo" width="30" height="30" className="m-auto navbar-link" style={{ borderRadius: '100%', background: "var(--bg-2)" }} />
+                    </Link>
+
+                    <h3 className='text-center fw-bold mt-3'>Let's Talk With Me!</h3>
+                    <p className='text-center fw-light'>
+                        I’m open to new opportunities, collaborations, or just a friendly chat.
+                        Let’s create something impactful together 🚀
+                    </p>
+
+                    {/* Social Icons */}
+                    <div className="d-flex justify-content-center gap-3 mt-3">
+                        <a href="https://github.com/Jerannn24" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
+                            <FaGithub />
+                        </a>
+                        <a href="https://www.linkedin.com/in/junior-natra-929b42320/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
+                            <FaLinkedin />
+                        </a>
+                        <a href="https://instagram.com/j.natras" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
+                            <FaInstagram />
+                        </a>
+                        <a href="mailto:juniornatra72@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
+                            <MdEmail />
+                        </a>
+                    </div>
+                </footer>
+            </div>
+            <div className='transition-1-reversed' style={{ height: '10vh' }}>
             </div>
         </div >
     )
