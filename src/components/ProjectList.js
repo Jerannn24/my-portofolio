@@ -43,7 +43,7 @@ const projects = [
         title: "Note App",
         description: "On Working Project",
         status: "in Progress",
-        url: "https://github.com/Jerannn24/note-app"    
+        url: "https://github.com/Jerannn24/note-app"
     },
 ];
 
