@@ -37,7 +37,7 @@ const ProjectList = () => {
                 {projects.map((project, index) => (
                     <div className="col-md-4" key={index}>
                         <div className="card h-100 border-success shadow-sm">
-                            <div className="card-body">
+                            <div className="card-body" style={{ backgroundColor: 'var(--navbar-fg)' }}>
                                 <h5 className="card-title">{project.title}</h5>
                                 <p className="card-text">{project.description}</p>
                             </div>
