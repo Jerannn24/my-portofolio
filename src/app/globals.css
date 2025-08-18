@@ -80,15 +80,15 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-.card-style:hover {
-  transform: scale(1.05);
-  background-color: var(--navbar-fg-hover);
-  transition: transform 0.2s ease-in-out;
-  cursor: pointer;
+.card-style-body {
+  border: 1px solid var(--navbar-fg);
 }
 
-.card-style-body:hover {
-  transition: all 0.2s ease-in;
+.card-style:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1.5px solid var(--navbar-fg-hover);
 }
 
 .navbar-darkmode:hover {
@@ -96,6 +96,12 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.card-style:active {
+  color: var(--navbar-fg);
+  transform: scale(0.97);
+  /* efek tekan ke dalam */
+  transition: all 0.1s ease-in-out;
+}
 
 .navbar-effect .nav-link:active,
 .navbar-darkmode:active {
