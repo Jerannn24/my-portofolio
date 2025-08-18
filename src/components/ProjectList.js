@@ -18,12 +18,21 @@ const projects = [
         description: "Deskripsi project ketiga.",
         status: "New",
     },
+    {
+        title: "Project 3",
+        description: "Deskripsi project ketiga.",
+        status: "New",
+    },
+    {
+        title: "Project 3",
+        description: "Deskripsi project ketiga.",
+        status: "New",
+    },
 ];
 
 const ProjectList = () => {
     return (
         <div className="container py-4">
-            <h2 className="mb-4 text-center">My Projects</h2>
             <div className="row g-4">
                 {projects.map((project, index) => (
                     <div className="col-md-4" key={index}>
@@ -35,10 +44,10 @@ const ProjectList = () => {
                             <div className="card-footer text-end">
                                 <span
                                     className={`badge ${project.status === "Completed"
-                                            ? "bg-success"
-                                            : project.status === "In Progress"
-                                                ? "bg-warning text-dark"
-                                                : "bg-primary"
+                                        ? "bg-success"
+                                        : project.status === "In Progress"
+                                            ? "bg-warning text-dark"
+                                            : "bg-primary"
                                         }`}
                                 >
                                     {project.status}

@@ -1,6 +1,7 @@
 "use client";
-import React from 'react'
-import Navbar from '../components/Navbar.jsx'
+import React from 'react';
+import Navbar from '../components/Navbar.jsx';
+import ProjectList from '@/components/ProjectList.js';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Portfolio = () => {
@@ -62,8 +63,8 @@ const Portfolio = () => {
                 <div id='project'
                     className='container'>
                     <h1 className='fw-bold text-center'>My Project Review</h1>
-                    <div className='scroll-area'>
-
+                    <div className='card-area'>
+                        <ProjectList />
                     </div>
                     <div>
 
