@@ -75,7 +75,7 @@ const Portfolio = () => {
                 backgroundColor: "var(--bg)",
                 minHeight: "100vh",
             }}>
-
+                
             </div>
         </div >
     )
