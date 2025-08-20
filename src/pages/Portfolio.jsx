@@ -50,7 +50,7 @@ const Portfolio = () => {
                                     delaySpeed={1500} />
                             </h5>
                         </div>
-                        <a href='https://www.linkedin.com/in/junior-natra-929b42320/'>
+                        <a href='#contact'>
                             <button className='contactMe'>
                                 Contact Me
                             </button>
@@ -97,7 +97,7 @@ const Portfolio = () => {
                     </p>
 
                     {/* Social Icons */}
-                    <div className="d-flex justify-content-center gap-3 mt-3">
+                    <div className="d-flex justify-content-center gap-3 mt-3" id="contact">
                         <a className="icon-effect" href="https://github.com/Jerannn24" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navbar-fg)', fontSize: "1.8rem" }}>
                             <FaGithub />
                         </a>
