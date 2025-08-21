@@ -45,6 +45,12 @@ const projects = [
         status: "in Progress",
         url: "https://github.com/Jerannn24/note-app"
     },
+    {
+        title: "Part of Aksang Website (Team 3)",
+        description: "On Working Project",
+        status: "in Progress",
+        url: "https://github.com/Cikang44/aksang-sparta-3"
+    },
 ];
 
 const ProjectList = () => {
