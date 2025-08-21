@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 
-// Contoh data project
 const projects = [
     {
         title: "Working ATM",
